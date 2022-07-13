@@ -2,9 +2,9 @@ var express = require('express');
 var router = express.Router();
 
 /* Add a new room */
-router.get('/', (req, res) => {
-  console.log('add');
-  res.render('index', { title: 'AP Hotel', message: 'Add room!' })
-})
+router.get('/', function(req, res, next) {
+  res.render('add', { title: 'Add new room' });
+  res.send('Create completed.');
+});
 
 module.exports = router;

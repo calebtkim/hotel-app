@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 /* display room list */
-router.get('/', (req, res) => {
+router.get('/', function(req, res, next) {
   console.log('list');
   res.render('index', { title: 'AP Hotel', message: 'List rooms!' })
 })
