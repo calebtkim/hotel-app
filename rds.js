@@ -2,7 +2,7 @@ var mysql = require('mysql');
 
 
 var rdsUrl = process.env.DB_URL;
-var password =  'iluvObs!';
+var password =  'password';
 var user = 'root';
 
 // mysql connection pool
