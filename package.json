@@ -10,11 +10,10 @@
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
-    "jade": "~1.11.0",
     "morgan": "~1.9.1",
-    "mysql": "^2.18.1",
     "postcss": "^8.4.6",
     "postcss-cssnext": "^3.1.1",
-    "postcss-nested": "^5.0.6"
+    "postcss-nested": "^5.0.6",
+    "pug": "^3.0.2"
   }
 }
