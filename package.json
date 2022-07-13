@@ -16,6 +16,7 @@
     "postcss": "^8.4.6",
     "postcss-cssnext": "^3.1.1",
     "postcss-nested": "^5.0.6",
+    "pug": "^3.0.2",
     "@opentelemetry/api": "^1.0.3",
     "@opentelemetry/sdk-trace-node": "^0.25.0",
     "@opentelemetry/sdk-metrics-base": "^0.25.0",
