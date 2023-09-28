@@ -11,6 +11,41 @@ var indexRouter = require('./routes/index');
 
 var app = express();
 
+app.get('/hc', (req, res) => {
+  console.log('received health check');
+  res.writeHead(200, { "Content-Type": "text/plain" });
+  res.end("Healthy");
+  return
+})
+
+console.log('Server sleeping');
+function sleep(ms) {
+  var start = Date.now();
+  while(Date.now() - start < ms) {
+    ;
+  }
+}
+
+var start = Date.now();
+var end = start + 8000; // 3 minutes
+for (var i = 0; ; i++) {
+  console.log(Date.now() + " " + i + " "+ factorial(i));
+  sleep(2000)
+  if (Date.now() > end) {
+    break;
+  }
+}
+
+function factorial(n) {
+  var result = 1;
+  for (var i = 2; i <= n; i++) {
+    result *= i;
+  }
+  return result;
+}
+console.log('Server awake');
+console.log('Server is now listening');
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
