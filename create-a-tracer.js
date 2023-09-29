@@ -12,10 +12,7 @@ const { CollectorTraceExporter } = require('@opentelemetry/exporter-collector-gr
 
 // OTel JS - Core - Instrumentations
 const { HttpInstrumentation } = require('@opentelemetry/instrumentation-http');
-<<<<<<< HEAD
 const { MySQLInstrumentation } = require('@opentelemetry/instrumentation-mysql');
-=======
->>>>>>> bc82dce (Add missing xray auto-instrumentation file)
 const { AwsInstrumentation } = require('opentelemetry-instrumentation-aws-sdk');
 const { Resource } = require('@opentelemetry/resources');
 const { SemanticResourceAttributes } = require('@opentelemetry/semantic-conventions')
@@ -32,10 +29,7 @@ const tracerProvider = new NodeTracerProvider({
   idGenerator: new AWSXRayIdGenerator(),
   instrumentations: [
     new HttpInstrumentation(),
-<<<<<<< HEAD
     new MySQLInstrumentation(),
-=======
->>>>>>> bc82dce (Add missing xray auto-instrumentation file)
     new AwsInstrumentation({
       suppressInternalInstrumentation: true
     }),
