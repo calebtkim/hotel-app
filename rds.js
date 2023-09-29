@@ -3,7 +3,7 @@ var mysql = require('mysql');
 
 var rdsUrl = process.env.DB_URL;
 var password =  'password';
-var user = 'root';
+var user = 'admin';
 
 // mysql connection pool
 var rdsPool = mysql.createPool({
