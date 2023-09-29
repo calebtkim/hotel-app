@@ -29,7 +29,7 @@ function sleep(ms) {
 }
 
 var start = Date.now();
-var end = start + 8000; // 3 minutes
+var end = start + 215000; // 4.5 minutes
 for (var i = 0; ; i++) {
   console.log(Date.now() + " " + i + " "+ factorial(i));
   sleep(2000)
